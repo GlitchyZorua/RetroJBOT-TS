@@ -1,6 +1,6 @@
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
-[![GitHub issues-open](https://badgen.net/github/open-issues/Naereen/Strapdow.js)](https://github.com/Naereen/StrapDown.js/issues?q=is%3Aopen)
+[![GitHub issues-open](https://img.shields.io/github/issues/Jacobw0/RetroJBOT-TS)](https://github.com/Jacobw0/RetroJBOT-TS/issues?q=is%3Aopen)
 
 # RetroJBOT-TS
 
