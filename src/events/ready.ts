@@ -3,7 +3,7 @@ import { Routes } from "discord-api-types/v9";
 import { Client } from "discord.js";
 import { CommandList } from "../commands/_CommandList.js";
 
-export const onReady = async (BOT: Client) => {
+export const onReady = async (RetroJBOT: Client) => {
   const rest = new REST({ version: "9" }).setToken(
     process.env.TOKEN as string
   );
@@ -11,9 +11,7 @@ export const onReady = async (BOT: Client) => {
   const commandData = CommandList.map((command) => command.data.toJSON());
 
   await rest.put(
-    Routes.applicationCommands(
-      process.env.GUILD_ID as string
-    ),
+    Routes.applicationCommands(RetroJBOT.user?.id || "missing id"),
     { body: commandData }
   );
 
