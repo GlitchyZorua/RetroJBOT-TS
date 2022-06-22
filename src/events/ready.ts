@@ -11,8 +11,7 @@ export const onReady = async (BOT: Client) => {
   const commandData = CommandList.map((command) => command.data.toJSON());
 
   await rest.put(
-    Routes.applicationGuildCommands(
-      BOT.user?.id || "missing id",
+    Routes.applicationCommands(
       process.env.GUILD_ID as string
     ),
     { body: commandData }
