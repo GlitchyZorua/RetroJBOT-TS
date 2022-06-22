@@ -15,6 +15,7 @@ export const onReady = async (RetroJBOT: Client) => {
     Routes.applicationCommands(RetroJBOT.user?.id || "missing id"),
     { body: commandData }
   );
+  console.log(commandData)
 
   console.log(chalk.green("Discord ready!"));
 };
