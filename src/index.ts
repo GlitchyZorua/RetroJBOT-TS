@@ -1,7 +1,11 @@
 import { Client } from "discord.js";
+import { validateEnv } from "./utils/validateEnv.js";
 
 (async () => {
-  const RetroJBOT = new Client();
+  if (!validateEnv()) return;
+  
+  const RetroJBOT = new Client({intents: ["GUILDS"]});
 
-  await RetroJBOT.login(process.env.BOT_TOKEN);
+  RetroJBOT.on("ready", () => console.log("Connected to Discord!"));
+  await RetroJBOT.login(process.env.TOKEN);
 })();
