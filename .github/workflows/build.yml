@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: TSC
+name: CI
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
       run: npm ci
     - name: tsc
       run: npm run build
-      
+
   TruffleHog:
     runs-on: ubuntu-latest
     steps:
