@@ -5,9 +5,7 @@ import chalk from "chalk";
 import { CommandList } from "../commands/_CommandList.js";
 
 export const onReady = async (RetroJBOT: Client) => {
-  const rest = new REST({ version: "9" }).setToken(
-    process.env.TOKEN as string
-  );
+  const rest = new REST({ version: "9" }).setToken(process.env.TOKEN as string);
 
   const commandData = CommandList.map((command) => command.data.toJSON());
 
