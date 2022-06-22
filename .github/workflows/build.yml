@@ -8,7 +8,7 @@ on:
 
 jobs:
   tsc:
-    name: tsc
+    name: Build TypeScript
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -19,7 +19,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: package-lock.json
     - name: npm install
-      run: npm install
+      run: npm ci
     - name: tsc
       run: npm run build
       
