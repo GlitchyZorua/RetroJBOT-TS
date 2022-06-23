@@ -4,9 +4,8 @@ import { validateEnv } from "./utils/validateEnv.js";
 import { onInteraction } from "./events/interaction.js";
 import { onReady } from "./events/ready.js";
 
-let packagedata = readFileSync("./package.json", { encoding: "utf-8" });
-let parsed = JSON.parse(packagedata);
-let version = parsed["version"];
+let packagedata = JSON.parse(readFileSync("./package.json", { encoding: "utf-8" }));
+let version = packagedata["version"];
 
 console.log(`\
 ########  ######## ######## ########   #######        ## ########   #######  ########
