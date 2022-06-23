@@ -1,7 +1,7 @@
 import { CommandInterface } from "../interfaces/command";
 import { SlashCommandBuilder } from "@discordjs/builders";
 
-export const ping: CommandInterface = {
+export const about: CommandInterface = {
   data: new SlashCommandBuilder()
     .setName("about")
     .setDescription("about the bot"),
