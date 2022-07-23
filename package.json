@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@types/node": "^18.0.0",
+    "@types/node": "^18.0.6",
     "typescript": "^4.7.4"
   },
   "name": "retrojbot-ts",
@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/Jacobw0/RetroJBOT-TS#readme",
   "dependencies": {
-    "@discordjs/builders": "^0.15.0",
-    "@discordjs/rest": "^0.5.0",
+    "@discordjs/builders": "^1.0.0",
+    "@discordjs/rest": "^1.0.0",
     "chalk": "^5.0.1",
-    "discord.js": "^13.8.1",
+    "discord.js": "^14.0.3",
     "dotenv": "^16.0.1"
   }
 }
