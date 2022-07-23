@@ -6,6 +6,6 @@ export const help: CommandInterface = {
     .setName("help")
     .setDescription("Shows the list of commands"),
   run: async (interaction) => {
-    await interaction.reply(":warning: List of commands are unavalible at this time.");
+    await interaction.reply(":warning: List of commands are unavailable at this time.");
   },
 };
