@@ -22,7 +22,7 @@ console.log(`\
 (async () => {
   if (!validateEnv()) return;
 
-  const RetroJBOT = new Client({ intents: ["GUILDS"] });
+  const RetroJBOT = new Client({ intents: ["Guilds"] });
 
   RetroJBOT.on("ready", async () => await onReady(RetroJBOT));
 
