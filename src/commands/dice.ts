@@ -8,7 +8,7 @@ export const dice: CommandInterface = {
     .addIntegerOption((option) =>
       option
         .setName("dice")
-        .setDescription("Roll the dice")
+        .setDescription("Shake the dice")
         .setRequired(false)
     ),
   run: async (interaction) => {
