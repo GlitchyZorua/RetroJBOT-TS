@@ -17,4 +17,4 @@ export const dice: CommandInterface = {
     if (isNaN(text)) { interaction.reply("ℹ️ Not a number") }
     await interaction.reply('🎲 '+Math.floor(Math.random() * text));
     }
-  }
+  };
