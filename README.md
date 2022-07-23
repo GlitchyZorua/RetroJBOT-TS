@@ -14,7 +14,7 @@ because the other one was painfully messy
 # License
 
 RetroJBOT-TS
-Copyright (C) 2022 Jacobw0, Frigyes06
+Copyleft (ɔ) 2022 Jacobw0, Frigyes06
 
 This program is free software: you can redistribute it and/or modify <br>
 it under the terms of the GNU Affero General Public License as published by <br>
@@ -28,3 +28,9 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License <br>
 along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+[![Get Firefox](http://toastytech.com/good/ffbutton80x15-getfirefox.gif)](https://www.mozilla.org/en-US/firefox/new/)
+
+
+Copyleft 2022 - All rights reversed.
+
