@@ -101,5 +101,5 @@ export const binarytotext: CommandInterface = {
   run: async (interaction) => {
     const yes = sitesList[Math.floor(Math.random() * sitesList.length)]; // picks a random website from the list
     await interaction.reply("🌐 "+ yes); // ...and posts it.
-  },
+  }
 };
