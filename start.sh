@@ -26,7 +26,9 @@ if [ -z "$response" ]; then
   exit 0
 elif [ "$response" -eq 2 ]; then
   # Settings (except the script doesn't exist yet because most of the stuff in there doesn't even work on Windows)
-  ./settings.sh
+  #./settings.sh
+  #^ settings.sh is obsolete. use .env instead
+  ./.env
   exit 0
 fi
 
