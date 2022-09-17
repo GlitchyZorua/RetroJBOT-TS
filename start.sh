@@ -3,7 +3,7 @@
 # Useful resource on whiptail: https://www.redhat.com/sysadmin/use-whiptail
 
 # Configure background title here
-bgTitle="JACOBS NODE.JS CODE EXPLORER v2.0"
+bgTitle="RetroJBOT Runtime Manager"
 
 # Check for whiptail package
 if [ ! -x "$(command -v whiptail)" ]; then
@@ -27,7 +27,7 @@ if [ -z "$response" ]; then
 elif [ "$response" -eq 2 ]; then
   # Settings (except the script doesn't exist yet because most of the stuff in there doesn't even work on Windows)
   #./settings.sh
-  #^ settings.sh is obsolete. use .env instead
+  #^ settings.sh is obsolete. use .env instead+
   ./.env
   exit 0
 fi
