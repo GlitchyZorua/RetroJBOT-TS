@@ -1,4 +1,7 @@
 @echo off
+
+
+
 :menu
 cls
 echo ==================================
@@ -39,7 +42,7 @@ if %ERRORLEVEL% == 1 goto run
 if %ERRORLEVEL% == 2 exit
 
 :settings
-settings.bat
+.env
 
 :loop
 cls

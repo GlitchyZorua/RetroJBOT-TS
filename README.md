@@ -11,6 +11,15 @@ A complete rewrite of retrojbot. written in TS
 
 because the other one was painfully messy
 
+
+# env file
+
+```env
+TOKEN=YourTokenHere
+```
+
+Please note: settings.bat is deprecated. Do not use it.
+
 # License
 
 RetroJBOT-TS
