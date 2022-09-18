@@ -18,7 +18,7 @@ because the other one was painfully messy
 TOKEN=YourTokenHere
 ```
 
-Please note: settings.bat is deprecated.
+Please note: settings.bat is deprecated. Do not use it.
 
 # License
 
