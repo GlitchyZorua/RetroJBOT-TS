@@ -5,6 +5,6 @@ import { about } from "./about.js";
 import { help } from "./help.js";
 import { dice } from "./dice.js";
 import { uselessweb } from "./uselessweb.js";
-import { test } from "./test.js";
 
-export const CommandList: CommandInterface[] = [ping, binarytotext, about, help, dice, uselessweb, test];
+
+export const CommandList: CommandInterface[] = [ping, binarytotext, about, help, dice, uselessweb];
