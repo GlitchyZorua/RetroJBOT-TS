@@ -21,23 +21,20 @@ response=$(whiptail --cancel-button Exit \
   2 Settings \
 3>&1 1>&2 2>&3)
 
-if [ -z "$response" ]; then
+if [ -z "$response" -eq 1 ]; then
   # Fuck this shit I'm out
   exit 0
 elif [ "$response" -eq 2 ]; then
-  # Settings (except the script doesn't exist yet because most of the stuff in there doesn't even work on Windows)
-  #./settings.sh
-  #^ settings.sh is obsolete. use .env instead+
+ echo To adjust the settings, edit the .env file.
 fi
 
 # Otherwise, proceed to the NPM menu
 
 # But first prepare the start function
 startBot() {
-  # sudo node index.js --unhandled-rejections=strict
-call npm ci
-call npm run build
-call npm run start
+ npm ci
+ npm run build
+ npm run start
 }
 
 response=$(whiptail \
