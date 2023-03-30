@@ -1,5 +1,7 @@
 version = 1
-environment = "nodejs"
+
+[analyzers.meta]
+  environment = "nodejs"
 
 [[analyzers]]
 name = "test-coverage"
