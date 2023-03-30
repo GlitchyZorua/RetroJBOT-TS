@@ -1,5 +1,11 @@
 version = 1
 
+
+
 [[analyzers]]
-name = "shell"
-enabled = true
+name = "test-coverage"
+
+[[analyzers]]
+name = "javascript"
+  [analyzers.meta]
+  environment = "nodejs"
