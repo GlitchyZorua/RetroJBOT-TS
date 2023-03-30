@@ -1,4 +1,5 @@
 version = 1
+environment = "nodejs"
 
 [[analyzers]]
 name = "test-coverage"
