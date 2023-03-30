@@ -23,7 +23,7 @@ Please note: settings.bat is deprecated. Do not use it.
 # License
 
 RetroJBOT-TS
-Copyleft (ɔ) 2022 Jacobw0, Frigyes06
+Copyleft (ɔ) 2022-2023 Jacobw0, Frigyes06
 
 This program is free software: you can redistribute it and/or modify <br>
 it under the terms of the GNU Affero General Public License as published by <br>
@@ -41,5 +41,5 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 [![Get Firefox](http://toastytech.com/good/ffbutton80x15-getfirefox.gif)](https://www.mozilla.org/en-US/firefox/new/)
 
 
-Copyleft 2022 - All rights reversed.
+Copyleft 2022-2023 - All rights reversed.
 
