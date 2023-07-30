@@ -8,4 +8,5 @@ import { uselessweb } from "./uselessweb.js";
 import { time } from "./time.js";
 import { calc } from "./calc.js";
 import { eball } from "./8ball.js";
-export const CommandList: CommandInterface[] = [ping, binarytotext, about, help, dice, uselessweb, time, calc, eball];
+import { uptime } from "./uptime.js";
+export const CommandList: CommandInterface[] = [ping, binarytotext, about, help, dice, uselessweb, time, calc, eball, uptime];
