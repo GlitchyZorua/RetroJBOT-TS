@@ -3,12 +3,14 @@
 # Configure background title here
 bgTitle="RetroJBOT Runtime Manager"
 
+
 # Check for whiptail package
 if [ ! -x "$(command -v whiptail)" ]; then
   printf "The 'whiptail' command is missing. Please install the package containing whiptail and try again.\n" 
   exit 1
 fi
 
+xmessage "The Runtime Manager is a bit unstable. if shit breaks all because of my lovely hacks and poor programming, let me know on GitHub or whatever. thanks for your understanding"
 
 # Main menu
 response=$(whiptail --cancel-button Exit \
@@ -16,14 +18,14 @@ response=$(whiptail --cancel-button Exit \
   --title "What would you like to do?" \
   --menu "" 0 0 0 \
   1 "Start NPM" \
-  2 Settings \
+  2 "ENV Settings" \
 3>&1 1>&2 2>&3)
 
 if [ -z "$response" -eq 1 ]; then
   # Fuck this shit I'm out
   exit 0
 elif [ "$response" -eq 2 ]; then
- echo To adjust the settings, edit the .env file.
+ vim .env
 fi
 
 # Otherwise, proceed to the NPM menu
@@ -60,3 +62,4 @@ elif [ "$response" -eq 1 ]; then
 else
   # Or, you know, just run it once and wait for something to fuck it up
   startBot
+fi
