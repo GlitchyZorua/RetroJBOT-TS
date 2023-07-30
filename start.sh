@@ -1,9 +1,10 @@
 #!/usr/bin/env sh
-
 # Useful resource on whiptail: https://www.redhat.com/sysadmin/use-whiptail
-
 # Configure background title here
 bgTitle="RetroJBOT Runtime Manager"
+
+# THIS WILL NEVER FUCKING WORK. AT LEAST, NOT ON MY COMPUTER.
+
 
 # Check for whiptail package
 if [ ! -x "$(command -v whiptail)" ]; then
