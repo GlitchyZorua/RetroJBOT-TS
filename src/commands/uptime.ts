@@ -14,7 +14,7 @@ export const uptime: CommandInterface = {
     const seconds = Math.floor(uptimeMs / 1000) % 60;
 
     // Format the values with leading zeros if necessary
-    const formattedUptime = `${days}d:${hours.toString().padStart(2, '0')}h:${minutes.toString().padStart(2, '0')}m${seconds.toString().padStart(2, '0')}s`;
+    const formattedUptime = `${days}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
     await interaction.reply(`:arrow_up: Uptime: ${formattedUptime}\n\n:warning: Due to server limitations, the bot might go offline with or without notice.`);
   },
