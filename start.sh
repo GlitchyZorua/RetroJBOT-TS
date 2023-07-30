@@ -3,9 +3,6 @@
 # Configure background title here
 bgTitle="RetroJBOT Runtime Manager"
 
-# THIS WILL NEVER FUCKING WORK. AT LEAST, NOT ON MY COMPUTER.
-
-
 # Check for whiptail package
 if [ ! -x "$(command -v whiptail)" ]; then
   printf "The 'whiptail' command is missing. Please install the package containing whiptail and try again.\n" 
