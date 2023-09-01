@@ -3,6 +3,8 @@
 [![GitHub issues-open](https://img.shields.io/github/issues/Jacobw0/RetroJBOT-TS)](https://github.com/Jacobw0/RetroJBOT-TS/issues?q=is%3Aopen)
 [![CodeFactor](https://www.codefactor.io/repository/github/jacobw0/retrojbot-ts/badge)](https://www.codefactor.io/repository/github/jacobw0/retrojbot-ts)
 
+
+Invite Link: https://discord.com/api/oauth2/authorize?client_id=612742660658167840&permissions=8&scope=bot
 # RetroJBOT-TS
 
 Currently Under Heavy Construction
@@ -10,6 +12,8 @@ Currently Under Heavy Construction
 A complete rewrite of retrojbot. written in TS
 
 because the other one was painfully messy
+
+# starting RetroJBOT
 
 
 # env file
