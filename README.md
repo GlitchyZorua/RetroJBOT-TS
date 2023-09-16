@@ -27,7 +27,7 @@ Please note: settings.bat is deprecated. Do not use it.
 # License
 
 RetroJBOT-TS
-Copyleft (ɔ) 2022-2023 Jacobw0, Frigyes06
+Copyleft (ɔ) 2022-2023 GlitchyZorua, Frigyes06
 
 This program is free software: you can redistribute it and/or modify <br>
 it under the terms of the GNU Affero General Public License as published by <br>
