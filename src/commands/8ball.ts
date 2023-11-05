@@ -8,7 +8,6 @@ export const eball: CommandInterface = { // i can't fucking put numbers in varia
     .setName("8ball")
     .setDescription("Ask the magic 8ball"),
   run: async (interaction) => {
-    // ah yes, a hack, right up my ass.
     const ee = ball[Math.floor(Math.random() * ball.length - 1)]; // picks a random option from the list
     await interaction.reply("🎱 "+ ee); // ...and posts it.
   }
