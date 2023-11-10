@@ -17,31 +17,30 @@ export const calc = {
 
 
     if (!expression) {
-      interaction.reply("Invalid or missing math expression.");
+      interaction.reply(":warning: Invalid or missing math expression. Syntax: `/calc <expression>`");
       return;
     }
+    
 
-    https.get(`https://api.mathjs.org/v4/?expr=${encodeURIComponent(expression)}`, (response) => {
+    https.get(`https://api.mathjs.org/v4/?expr=${encodeURIComponent(replaceSpecialPhrases(expression))}`, (response) => {
       let data = '';
-
       response.on('data', (chunk) => {
         data += chunk;
       });
-
       response.on('end', () => {
         try {
-          const result = JSON.parse(data);
+          // const result = JSON.parse();
 
           const CalcEmbed = {
             title: '🖩 Calculation Result',
             fields: [
               {
                 name: 'Expression',
-                value: expression,
+                value: `\`${expression}\``,
               },
               {
                 name: 'Result',
-                value: result.result,
+                value: `\`${data}\``,
               },
             ],
           };
@@ -49,9 +48,46 @@ export const calc = {
           interaction.reply({ embeds: [CalcEmbed] });
         } catch (error) {
           console.error(error);
-          interaction.reply("An error occurred while calculating the expression.");
+          interaction.reply(":no_entry: An error occurred while calculating the expression.");
         }
       });
     });
   },
 };
+
+function replaceSpecialPhrases(input: string): string {
+  // Define special phrases and their replacements
+  const replacements: Record<string, string> = {
+    "the answer to life, the universe, and everything": "42",
+    "the loneliest number": "1",
+    "numbers of horns on a unicorn": "1",
+    "bakers dozen": "13",
+    "baker's dozen": "13",
+    "the answer to [the ultimate question of] life the universe and everything":"42",
+    "the answer to the ultimate question of life the universe and everything":"42",
+    "`":"'",
+    "funny number":"69",
+    "weed number":"420",
+    "devil number":"666",
+    "leet":"1337",
+    "zero":"0",
+    "one":"1",
+    "two":"2",
+    "three":"3",
+    "four":"4",
+    "five":"5",
+    "six":"6",
+    "seven":"7",
+    "eight":"8",
+    "nine":"9",
+    "ten":"10",
+    "once in a blue moon":"1.16699016 * 10^-8"
+  };
+
+  // Replace special phrases with their values
+  for (const phrase in replacements) {
+    input = input.replace(new RegExp(phrase, 'g'), replacements[phrase]);
+  }
+
+  return input;
+}
