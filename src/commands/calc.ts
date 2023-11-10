@@ -48,7 +48,7 @@ export const calc = {
           interaction.reply({ embeds: [CalcEmbed] });
         } catch (error) {
           console.error(error);
-          interaction.reply(":no_entry: An error occurred while calculating the expression.");
+          interaction.reply(":no_entry: An error occurred while calculating the expression. (Maybe the service is down?)");
         }
       });
     });
@@ -65,6 +65,7 @@ function replaceSpecialPhrases(input: string): string {
     "baker's dozen": "13",
     "the answer to [the ultimate question of] life the universe and everything":"42",
     "the answer to the ultimate question of life the universe and everything":"42",
+    "once in a blue moon":"1.16699016 * 10^-8 hertz",
     "`":"'",
     "funny number":"69",
     "weed number":"420",
@@ -81,7 +82,12 @@ function replaceSpecialPhrases(input: string): string {
     "eight":"8",
     "nine":"9",
     "ten":"10",
-    "once in a blue moon":"1.16699016 * 10^-8"
+    "plus":"+",
+    "minus":"-",
+    "divide":"/",
+    "times":"*",
+    "×":"*",
+    "÷":"/"
   };
 
   // Replace special phrases with their values

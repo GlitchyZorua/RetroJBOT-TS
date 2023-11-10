@@ -6,6 +6,6 @@ export const help: CommandInterface = {
     .setName("help")
     .setDescription("Shows the list of commands"),
   run: async (interaction) => {
-    await interaction.reply(":warning: List of commands are unavailable at this time.");
+    await interaction.reply("ℹ️ You can view the list of commands from the wiki here: https://github.com/GlitchyZorua/RetroJBOT-TS/wiki/Commands");
   },
 };
