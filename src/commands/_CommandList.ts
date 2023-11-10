@@ -12,4 +12,6 @@ import { eball } from "./8ball.js";
 import { uptime } from "./uptime.js";
 import { cards } from "./cards.js";
 import { donut } from "./donut.js";
-export const CommandList: CommandInterface[] = [ping, binarytotext, about, help, dice, uselessweb, time, calc, eball, uptime, cards, donut];
+import { xn } from "./69ball.js";
+import { coinflip } from "./coinflip.js";
+export const CommandList: CommandInterface[] = [ping, binarytotext, about, help, dice, uselessweb, time, calc, eball, uptime, cards, donut, xn, coinflip];
