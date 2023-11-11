@@ -15,7 +15,6 @@ export const calc = {
   run: async (interaction: ChatInputCommandInteraction) => {
  const expression = interaction.options.getString('expression');
 
-
     if (!expression) {
       interaction.reply(":warning: Invalid or missing math expression. Syntax: `/calc <expression>`");
       return;
@@ -29,8 +28,11 @@ export const calc = {
       });
       response.on('end', () => {
         try {
+        const result = data.trim();
           // const result = JSON.parse();
-
+	if (!result) {
+        throw new Error(":x: Invalid result. ");
+    	}
           const CalcEmbed = {
             title: '🖩 Calculation Result',
             fields: [
@@ -44,8 +46,13 @@ export const calc = {
               },
             ],
           };
-
-          interaction.reply({ embeds: [CalcEmbed] });
+          interaction.reply({ embeds: [CalcEmbed] }).catch(error => {
+            console.error("Error replying to interaction:", error);
+            //interaction.reply(':no_entry: An error occurred while calculating the expression.'); // ```js\n'+error+'```
+            
+            //for whatever the fuck reason this isn't working as well as i thought it would. 
+            //but it'll do for now.
+          });
         } catch (error) {
           console.error(error);
           interaction.reply(":no_entry: An error occurred while calculating the expression. (Maybe the service is down?)");
@@ -97,3 +104,6 @@ function replaceSpecialPhrases(input: string): string {
 
   return input;
 }
+
+
+

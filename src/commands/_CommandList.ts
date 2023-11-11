@@ -14,4 +14,6 @@ import { cards } from "./cards.js";
 import { donut } from "./donut.js";
 import { xn } from "./69ball.js";
 import { coinflip } from "./coinflip.js";
-export const CommandList: CommandInterface[] = [ping, binarytotext, about, help, dice, uselessweb, time, calc, eball, uptime, cards, donut, xn, coinflip, ];
+import { cook } from "./cook.js";
+import { fact } from "./fact.js";
+export const CommandList: CommandInterface[] = [fact, cook, ping, about, help, uselessweb, time, calc, eball, uptime, cards, donut, xn, coinflip];
