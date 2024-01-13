@@ -1,4 +1,4 @@
-import { ChatInputCommandInteraction, CommandInteraction, CommandInteractionOptionResolver } from 'discord.js';
+import { ChatInputCommandInteraction, CommandInteractionOptionResolver } from 'discord.js';
 import { SlashCommandBuilder } from "@discordjs/builders";
 
 const talkedRecently = new Set<string>();
@@ -14,7 +14,7 @@ export const cook = {
         .setDescription('The thing to cook.')
         .setRequired(true),
     ),
-    run: async (interaction: ChatInputCommandInteraction, options: CommandInteractionOptionResolver) => {
+  run: async (interaction: ChatInputCommandInteraction, options: CommandInteractionOptionResolver) => {
     // Get the user who invoked the command and the thing they want to cook.
     const user = interaction.user;
     const thing = options.getString('thing');
