@@ -14,20 +14,21 @@ export const cook = {
         .setDescription('The thing to cook.')
         .setRequired(true),
     ),
-  run: async (interaction: ChatInputCommandInteraction, options: CommandInteractionOptionResolver) => {
+  run: async (interaction: ChatInputCommandInteraction) => {
     // Get the user who invoked the command and the thing they want to cook.
     const user = interaction.user;
-    const thing = options.getString('thing');
+    const thing = interaction.options.getString('thing');
 
     // Check if the user has already cooked recently.
     if (talkedRecently.has(user.id)) {
-      return interaction.reply({
-        content: ':alarm_clock: **Cooldown** You are cooking too fast! Please slow down after 9 seconds.',
+      interaction.reply({
+        content: '⏰ **Cooldown** You are cooking too fast! Please slow down after 9 seconds.',
         ephemeral: true,
       });
+      return;
     }
 
-    // Add the user to the cooldown list.
+    // Add the user to the cooldown liSst.
     talkedRecently.add(user.id);
 
     // Remove the user from the cooldown list after 9 seconds.
