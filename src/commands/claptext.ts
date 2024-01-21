@@ -1,24 +1,27 @@
-import { CommandInterface } from "../interfaces/command";
-import { SlashCommandBuilder } from "@discordjs/builders";
+import { ChatInputCommandInteraction, CacheType } from 'discord.js';
+import { SlashCommandBuilder } from '@discordjs/builders';
 
-export const claptext: CommandInterface = {
+export const claptext = {
   data: new SlashCommandBuilder()
-    .setName("claptext")
-    .setDescription("👏writes👏text👏like👏this")
-    .addIntegerOption((option) =>
+    .setName('claptext')
+    .setDescription('writes👏text👏like👏this')
+    .addStringOption((option) =>
       option
-        .setName("text")
-        .setDescription("clapify text")
+        .setName('text')
+        .setDescription('text to clapify')
         .setRequired(true)
     ),
-  run: async (interaction) => {
-    let text: String | null = interaction.options.getString('claptext');
-    if (text == null){
-      interaction.reply(':x: `text` equals `null`. How did you even do that?');
-      console.error('text equals null. How did you even do that?');
-      return;
+  async run(interaction: ChatInputCommandInteraction<CacheType>) {
+    try {
+      const text = interaction.options.getString('text') ?? '';
+      const clap = text.replace(/ /g, '👏');
+      await interaction.reply(clap);
+    } catch (error) {
+      console.error('Error in claptext command:', error);
+      await interaction.reply(':x: An error occurred. Please try again.');
     }
-    let clap = text.replace(/ /g, '👏');
-    await interaction.reply(clap);
-    }
-  };
+  },
+};
+
+
+// FUCK YOU GOOGLE BARD
