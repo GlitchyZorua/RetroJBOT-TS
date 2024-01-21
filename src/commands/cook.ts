@@ -56,3 +56,23 @@ export const cook = {
     }, 1000);
   },
 };
+
+
+function replaceSpecialPhrases(input: string): string { //stupid fucking snowflakes abusing this command.
+  // Define special phrases and their replacements
+  const replacements: Record<string, string> = {
+  "sandwich":"don't you fucking dare",
+  "sandwitch":"fuck no.",
+  "sandwhich":"stop.",
+  "sandw1ch":"if you are gonna bypass the filter, i'll have you know that i can ban your ass off of the bot. don't try.",
+  "s@ndwich":"people like you are the reason why the owner wants to disable this command.",
+  "s4ndwich":"stop it" 
+  };
+
+  // Replace special phrases with their values
+  for (const phrase in replacements) {
+    input = input.replace(new RegExp(phrase, 'g'), replacements[phrase]);
+  }
+
+  return input;
+}
