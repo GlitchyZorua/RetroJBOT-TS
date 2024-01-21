@@ -7,13 +7,13 @@ export const dice: CommandInterface = {
     .setDescription("Shake the dice.")
     .addIntegerOption((option) =>
       option
-        .setName("dice")
-        .setDescription("Shake the dice")
+        .setName("sides")
+        .setDescription("the amount of sides on a dice")
         .setRequired(false)
     ),
   run: async (interaction) => {
     let text: number | null = interaction.options.getInteger("dice");
-    if (text == null) { text = 6 }  
+    if (text == null) {text = 6 }  
     if (isNaN(text)) { interaction.reply("ℹ️ Not a number") }
     await interaction.reply('🎲 '+Math.floor(Math.random() * text));
     }

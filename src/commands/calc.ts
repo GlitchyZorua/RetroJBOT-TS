@@ -31,8 +31,8 @@ export const calc = {
         const result = data.trim();
           // const result = JSON.parse();
 	if (!result) {
-        throw new Error(":x: Invalid result. ");
-    	}
+  throw new Error(":x: Invalid result. ");
+  }
           const CalcEmbed = {
             title: '🖩 Calculation Result',
             fields: [

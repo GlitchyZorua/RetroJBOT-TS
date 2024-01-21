@@ -13,7 +13,11 @@ export const binarytotext: CommandInterface = {
     ),
   run: async (interaction) => {
     let to_convert: String | null = interaction.options.getString("binary");
-    if (to_convert == null) return;
+    if (to_convert == null){
+      interaction.reply(':x: `to_convert` equals `null`. How did you even do that?');
+      console.error('to_convert equals null. How did you even do that?');
+      return;
+    }
     let text = to_convert
       .split(" ")
       .map((elem) => String.fromCharCode(parseInt(elem, 2)))
