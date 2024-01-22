@@ -23,4 +23,5 @@ import { send } from "./send.js";
 import { joke } from "./joke.js";
 import { format } from "./format.js"
 import { fortune } from "./fortune.js"
-export const CommandList: CommandInterface[] = [fact, cook, ping, about, help, uselessweb, time, calc, eball, uptime, cards, donut, xn, coinflip, binarytotext, dice, manifesto, claptext, talkingflower, send, joke, format, fortune];
+import { rate } from "./rate.js"
+export const CommandList: CommandInterface[] = [fact, cook, ping, about, help, uselessweb, time, calc, eball, uptime, cards, donut, xn, coinflip, binarytotext, dice, manifesto, claptext, talkingflower, send, joke, format, fortune, rate];
