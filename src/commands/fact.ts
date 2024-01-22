@@ -11,7 +11,7 @@ export const fact = {
   async run(interaction: CommandInteraction) {
     try {
       const randomFact = await getRandomFact('en');
-      interaction.reply(`>>> ${randomFact}`);
+      interaction.reply(`${randomFact}`);
     } catch {
       interaction.reply(':x: An error occurred while fetching the random fact.');
     }

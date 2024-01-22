@@ -19,4 +19,6 @@ import { fact } from "./fact.js";
 import { manifesto } from "./manifesto.js";
 import { claptext } from "./claptext.js";
 import { talkingflower } from "./talkingflower.js";
-export const CommandList: CommandInterface[] = [fact, cook, ping, about, help, uselessweb, time, calc, eball, uptime, cards, donut, xn, coinflip, binarytotext, dice, manifesto, claptext, talkingflower];
+import { send } from "./send.js";
+import { joke } from "./joke.js";
+export const CommandList: CommandInterface[] = [fact, cook, ping, about, help, uselessweb, time, calc, eball, uptime, cards, donut, xn, coinflip, binarytotext, dice, manifesto, claptext, talkingflower, send, joke];
