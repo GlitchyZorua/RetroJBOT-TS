@@ -43,5 +43,5 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 [![Get Firefox](http://toastytech.com/good/ffbutton80x15-getfirefox.gif)](https://www.mozilla.org/en-US/firefox/new/)
 
 
-Copyleft 2022-2023 - All rights **reversed**.
+Copyleft 2022-2024 - All rights **reversed**.
 
