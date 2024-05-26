@@ -4,6 +4,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/jacobw0/retrojbot-ts/badge)](https://www.codefactor.io/repository/github/jacobw0/retrojbot-ts)
 
 Wiki: https://github.com/GlitchyZorua/RetroJBOT-TS/wiki (Under Construction)
+
 Invite Link: https://discord.com/api/oauth2/authorize?client_id=612742660658167840&permissions=8&scope=bot
 # RetroJBOT-TS
 
