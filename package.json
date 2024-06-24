@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@types/node": "^20.12.8",
+    "@types/node": "^20.14.8",
     "typescript": "^5.4.5"
   },
   "name": "retrojbot-ts",
