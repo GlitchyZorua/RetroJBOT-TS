@@ -6,6 +6,6 @@ export const about: CommandInterface = {
     .setName("about")
     .setDescription("about the bot"),
   run: async (interaction) => {
-    await interaction.reply(":information_source: A free and open-source bot. 100% free forever.\n This is a full rewrite of RetroJBOT in TypeScript. Because the original code was messy as hell. And we know it. \n\n2018-2023 🄯");
+    await interaction.reply(":information_source: A free and open-source bot. 100% free forever.\nThis is a full rewrite of RetroJBOT in TypeScript. Because the original code was messy as hell. And we know it. \n\n2018-2023 Copyleft 🄯\nGitHub: <https://github.com/GlitchyZorua/RetroJBOT-TS>");
   },
 };

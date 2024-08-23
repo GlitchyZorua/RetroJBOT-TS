@@ -21,7 +21,10 @@ import { claptext } from "./claptext.js";
 import { talkingflower } from "./talkingflower.js";
 import { send } from "./send.js";
 import { joke } from "./joke.js";
-import { format } from "./format.js"
-import { fortune } from "./fortune.js"
-import { rate } from "./rate.js"
-export const CommandList: CommandInterface[] = [fact, cook, ping, about, help, uselessweb, time, calc, eball, uptime, cards, donut, xn, coinflip, binarytotext, dice, manifesto, claptext, talkingflower, send, joke, format, fortune, rate];
+import { format } from "./format.js";
+import { fortune } from "./fortune.js";
+import { rate } from "./rate.js";
+import { whatif } from "./whatif.js";
+import { inspirobot } from "./inspirobot.js"
+import { pinktext } from "./pinktext.js"
+export const CommandList: CommandInterface[] = [fact, cook, ping, about, help, uselessweb, time, calc, eball, uptime, cards, donut, xn, coinflip, binarytotext, dice, manifesto, claptext, talkingflower, send, joke, format, fortune, rate, whatif, inspirobot, pinktext];
