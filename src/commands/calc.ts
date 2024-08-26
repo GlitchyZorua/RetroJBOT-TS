@@ -30,9 +30,9 @@ export const calc = {
         try {
         const result = data.trim();
           // const result = JSON.parse();
-	if (!result) {
-  throw new Error(":x: Invalid result. ");
-  }
+	      if (!result) {
+        throw new Error(":x: Invalid result.");
+        }
           const CalcEmbed = {
             title: '🖩 Calculation Result',
             fields: [
@@ -65,6 +65,7 @@ export const calc = {
 function replaceSpecialPhrases(input: string): string {
   // Define special phrases and their replacements
   const replacements: Record<string, string> = {
+    // Google-like easter eggs
     "the answer to life, the universe, and everything": "42",
     "the loneliest number": "1",
     "numbers of horns on a unicorn": "1",
@@ -73,11 +74,17 @@ function replaceSpecialPhrases(input: string): string {
     "the answer to [the ultimate question of] life the universe and everything":"42",
     "the answer to the ultimate question of life the universe and everything":"42",
     "once in a blue moon":"1.16699016 * 10^-8 hertz",
+    // safe guards
     "`":"'",
+    // funny numbers
     "funny number":"69",
     "weed number":"420",
     "devil number":"666",
     "leet":"1337",
+    "wysi":"727",
+    "when you fucking see it":"727",
+    "when you see it":"727",
+    // fuzzy math
     "zero":"0",
     "one":"1",
     "two":"2",
@@ -93,8 +100,21 @@ function replaceSpecialPhrases(input: string): string {
     "minus":"-",
     "divide":"/",
     "times":"*",
+    // Conveiency 
     "×":"*",
-    "÷":"/"
+    "÷":"/",
+    // PI
+    "🥧":"3.14",
+    "pi":"3.14",
+    "π":"3.14",
+    "Π":"3.14",
+    "П":"3.14",
+    "п":"3.14",
+    "Ⲡ":"3.14",
+    "ⲡ":"3.14",
+    "𐍀":"3.14",
+    
+    // Custom scripts
   };
 
   // Replace special phrases with their values
