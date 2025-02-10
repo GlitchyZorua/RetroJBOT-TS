@@ -3,6 +3,15 @@
 [![GitHub issues-open](https://img.shields.io/github/issues/Jacobw0/RetroJBOT-TS)](https://github.com/Jacobw0/RetroJBOT-TS/issues?q=is%3Aopen)
 [![CodeFactor](https://www.codefactor.io/repository/github/jacobw0/retrojbot-ts/badge)](https://www.codefactor.io/repository/github/jacobw0/retrojbot-ts)
 
+# Goodbye Note.
+
+After thinking, I have decided to completely halt the RetroJBOT development, permanently.
+
+I know, it was a hard choice, but honestly, i couldn't risk it anymore. Things in life have been hard for me, and i'm slowly in the process of getting rid of discord. this is one of them.
+
+The unfinished code will remain here forever though. 
+
+
 
 Invite Link: https://discord.com/api/oauth2/authorize?client_id=612742660658167840&permissions=8&scope=bot
 # RetroJBOT-TS
